@@ -64,20 +64,23 @@ const Wrapper = styled.div`
   }
 `;
 
+// ==========홈아이콘
 const Logo = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 
   & > i {
     /* width: 2rem;
     height: 2rem; */
     font-size: 2rem;
     color: darksalmon;
-    padding: 4px;
+    padding-right: 4px;
   }
 `;
 
+// ==========메뉴
 const Menu = styled.ul`
   display: flex;
   justify-content: space-between;
@@ -85,7 +88,7 @@ const Menu = styled.ul`
   padding: 0;
 
   & > li {
-    padding: 0.5em;
+    padding: 1em 2em;
     justify-content: space-between;
 
     :hover {
@@ -100,6 +103,7 @@ const Menu = styled.ul`
   }
 
   @media screen and (max-width: 768px) {
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -111,6 +115,7 @@ const Menu = styled.ul`
   }
 `;
 
+// ==========소셜아이콘
 const Icon = styled.ul`
   display: flex;
   padding: 0;
@@ -122,18 +127,22 @@ const Icon = styled.ul`
   }
 
   @media screen and (max-width: 768px) {
+    display: none;
     justify-content: center;
     width: 100%;
   }
 `;
 
+// ==========햄버거
 const Hamburger = styled.a`
   display: none;
   color: white;
 
   position: absolute;
   right: 2rem;
+  top: 1rem;
   font-size: 1.5rem;
+  padding: 0;
 
   @media screen and (max-width: 768px) {
     display: block;
