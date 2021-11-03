@@ -53,7 +53,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: #274472;
-  color: white;
+  color: var(--text-color);
   font-family: source sans pro;
   padding: 0 1rem;
 
@@ -99,18 +99,23 @@ const Menu = styled.ul`
 
   & > li > a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
   }
 
   @media screen and (max-width: 768px) {
-    display: none;
+    /* display: none; */
     flex-direction: column;
     align-items: center;
     width: 100%;
 
     > li {
-      width: 100%;
+      width: 90%;
       text-align: center;
+
+      :hover {
+        background-color: darksalmon;
+        border-radius: 5px;
+      }
     }
   }
 `;
@@ -127,7 +132,7 @@ const Icon = styled.ul`
   }
 
   @media screen and (max-width: 768px) {
-    display: none;
+    /* display: none; */
     justify-content: center;
     width: 100%;
   }
@@ -136,7 +141,7 @@ const Icon = styled.ul`
 // ==========햄버거
 const Hamburger = styled.a`
   display: none;
-  color: white;
+  color: var(--text-color);
 
   position: absolute;
   right: 2rem;
